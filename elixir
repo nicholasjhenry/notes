@@ -1,0 +1,29 @@
+Behaviours
+
+- gen_server: client/server pattern
+- gen_fsm: finite state machine pattern
+- gen_event: event manager/handler pattern
+- supervisor: supervision tree pattern
+- application: encapsulates the application pattern
+
+Collections
+
+- tuple: is an ordered collection of values (similary to an array)
+- list: linked data structure `[head|tail]``
+- keyword list: `[name: "Dave", city: "Dallas", likes: "Programming"] == [{:name, "Dave"}, {:city, "Dallas"}, {:likes, "Programming"}]`
+- map: collection of key values pairs `%{ key => value, key => value}`
+
+Mix
+
+    mix help
+
+Sigils
+
+    iex > h(sigil_)
+
+Maps
+
+    iex> %{map | :a => 2}
+    %{:a => 2, 2 => :b}
+    iex> %{map | :c => 3}
+    ** (KeyError) key :c not found in: %{2 => :b, :a => 1}

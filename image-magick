@@ -1,0 +1,2 @@
+'400x300'    # resize, maintain aspect ratio will resize to the minium that makes sense
+'400x300#'   # resize, crop if necessary to maintain aspect ratio (centre gravity)

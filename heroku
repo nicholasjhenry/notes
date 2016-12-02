@@ -1,0 +1,24 @@
+Capture a backup (with expiring an old one)
+
+    heroku pgbackups:capture -r production --expire
+
+SQL console
+
+    heroku pg:psql
+
+Logs
+
+    heroku logs --source app --ps worker
+
+Push another branch
+
+    git push -f heroku HEAD:master
+
+Push database
+
+    heroku pg:reset DATABASE_URL -a  example-app
+    heroku pg:push example-app DATABASE_URL -a example-app
+
+Pull database
+
+   heroku pg:pull DATABASE_URL example-app

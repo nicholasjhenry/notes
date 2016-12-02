@@ -1,0 +1,9 @@
+## Install GPG tools
+
+Test it working
+
+    echo hi | gpg -e -r nicholas.henry@gmail.com | gpg -d --use-agent
+
+Setup
+
+    https://gist.github.com/nicholasjhenry/cd4c08bfdd47520e4909ee489ceaffaf

@@ -1,0 +1,28 @@
+Don't update under Tmux
+
+    brew update
+    brew doctor
+    brew outdated
+    brew upgrade <formulae name>
+
+Errors
+
+    error: The following untracked working tree files would be overwritten by merge:
+    Library/Formula/libarchive.rb
+
+    cd /usr/local/Library/Formula
+    git reset --hard FETCH_HEAD
+
+Vim
+
+    brew install macvim --override-system-vim
+
+Commands
+
+    brew services restart mysql
+    brew services list
+
+Cask
+
+    brew cask list
+    brew install --force <app>

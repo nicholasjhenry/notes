@@ -1,0 +1,51 @@
+Docker for macOs
+
+    # docker: base docker library, works with DockerFile
+    docker ...
+
+    # Using virtualbox
+    docker-machine ip
+    docker-machine env default
+
+    # docker-compose: works with docker-compose.yml
+    docker-compose up / docker-compose up &
+
+Delete containers
+
+    docker rm `docker ps --no-trunc -aq`
+
+Delete images
+
+    docker rmi image-name
+
+List containers
+
+    docker ps (only list running by default)
+    docker ps --all
+
+Shell into container
+
+    docker exec -it e2557f32c61d bash
+
+Run
+
+    docker run -it --rm -p "4000:4000" -v $(pwd):/app -w /app elixir bash -l
+
+Errors
+
+    Issue: "Error response from daemon: client is newer than server"
+    Solution: `docker-machine upgrade default`
+
+IP address of host
+
+    docker-compose run --rm api /sbin/ip route|awk '/default/ { print $3 }'
+
+Heroku docker
+
+    https://devcenter.heroku.com/articles/container-registry-and-runtime#getting-started
+
+    docker images
+    docker run -p 5000:5000 -e PORT=5000 registry.heroku.com/frozen-citadel-12707/web
+    docker-machine ip default # http://192.168.99.100:5000
+    docker ps
+    docker stop <container id>
