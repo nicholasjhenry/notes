@@ -6,3 +6,5 @@
 
     git config --global user.signingkey <YOUR-SIGNING-KEY-PUB-ID>
     git config --global commit.gpgsign true
+    
+- Configure SourceTree (ensure the GPG program is configured under advance)
