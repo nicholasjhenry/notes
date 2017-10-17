@@ -1,9 +1,8 @@
 ## Install GPG tools
 
-Test it working
+- Install https://gpgtools.org/
+- Add existing key
+- Configure Git:
 
-    echo hi | gpg -e -r nicholas.henry@gmail.com | gpg -d --use-agent
-
-Setup
-
-    https://gist.github.com/nicholasjhenry/cd4c08bfdd47520e4909ee489ceaffaf
+    git config --global user.signingkey <YOUR-SIGNING-KEY-PUB-ID>
+    git config --global commit.gpgsign true
