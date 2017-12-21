@@ -1,0 +1,4 @@
+defp assert_down(pid) do
+  ref = Process.monitor(pid)
+  assert_receive {:DOWN, ^ref, _, _, _}
+end
