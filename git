@@ -126,3 +126,7 @@ Remove old remote branches
 gitrevisions - specifying revisions and ranges for git
 
     http://schacon.github.io/git/gitrevisions.html
+
+## Worktree
+
+    git worktree add --checkout ../path branch
