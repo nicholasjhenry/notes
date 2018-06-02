@@ -49,3 +49,7 @@ Heroku docker
     docker-machine ip default # http://192.168.99.100:5000
     docker ps
     docker stop <container id>
+
+MySQL
+
+    docker exec -i my_sql_container mysql -uroot  my_database < data.sql
