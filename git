@@ -130,3 +130,7 @@ gitrevisions - specifying revisions and ranges for git
 ## Worktree
 
     git worktree add --checkout ../path branch
+
+## Allow empty
+
+   git commit --allow-empty -m "Your msg"
