@@ -1,5 +1,13 @@
 http://elm-lang.org/get-started
 
+Setup:
+
+    npm install -g elm
+    elm-make --version
+    elm reactor --address=0.0.0.0 --port=9000
+    elm-make --warn Bingo.elm --output bingo.js
+    elm-live Bingo.elm --output=bingo.js --open
+
 Start with:
 
     elm package install
