@@ -1,0 +1,5 @@
+    watchman watch .
+    watchman watch-list
+    watchman -- trigger ./ format '**/*.ex' '**/*.exs' '**/*.default' -- mix format
+    watchman trigger-list .
+    watchman watch-del-all
