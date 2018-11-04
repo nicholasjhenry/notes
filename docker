@@ -54,6 +54,10 @@ MySQL
 
     docker exec -i my_sql_container mysql -uroot  my_database < data.sql
 
+Postgres
+
+    docker run --rm --name as-nested-set -p "5432:5432" -d postgres:10.4
+
 Dockerfile
 
 ADD VS COPY
