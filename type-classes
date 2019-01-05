@@ -10,3 +10,9 @@ What is the difference between the three?
 * monads: you apply a function that returns a wrapped value, to a wrapped value using >>= or liftM
 
 ref: http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+
+## Operators
+
+* map: <$> <!>
+* apply: <*>
+
