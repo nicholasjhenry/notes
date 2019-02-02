@@ -1,6 +1,22 @@
-1. A *functor* is a data type that implements the Functor typeclass.
-An *applicative* is a data type that implements the Applicative typeclass.
-A *monad* is a data type that implements the Monad typeclass.
+# Type Classes
+
+## Hierarchy
+
+     ↓           ↓         ↓         ↓      ↙   ↓   ↘           |
+  Category     Monoid     Ord    Traversable  Apply  Bifunctor  |
+     ↓                                       ↙    ↘             ↓
+   Arrow                            Applicative   Chain       Extend
+                                             ↘    ↙             ↓
+                                              Monad           Comonad
+
+Source: https://github.com/expede/witchcraft
+
+## Functor (Mapable) / Applicative / Monad
+
+- A *functor* is a data type that implements the Functor typeclass.
+- An *applicative* is a data type that implements the Applicative typeclass.
+- A *monad* is a data type that implements the Monad typeclass.
+
 A Maybe implements all three, so it is a functor, an applicative, and a monad.
 
 What is the difference between the three?
@@ -9,10 +25,62 @@ What is the difference between the three?
 * applicatives: you apply a wrapped function to a wrapped value using <*> or liftA
 * monads: you apply a function that returns a wrapped value, to a wrapped value using >>= or liftM
 
-ref: http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
+Source: http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
 
-## Operators
+Operators:
 
 * map: <$> <!>
 * apply: <*>
 
+## Monoid (Combinable - two things at a time)
+
+- "an aggregation pattern"
+
+Examples:
+
+- sum
+- product
+- composition
+- concatenation
+
+Rules:
+
+1. Closure: The result of combining two things is always another one of the things.
+   e.g. "reduce"
+2. Associativity: When combining more than two things, which pairwise combination you do first doesn’t matter. e.g.
+    - Divide and conquer algorithms
+    - Parallelization
+    - Incrementalism
+3. Identity element: There is a special thing called “zero” such that when you combine any thing with “zero” you get the original thing back.
+
+Source: https://fsharpforfunandprofit.com/posts/monoids-without-tears/#the-equations-revisited
+
+## Semigroup
+
+Obey the two laws above. (i.e. no identity function.)
+
+Examples:
+
+- a domain consisting of positive number (i.e. no "zero" - identity)
+
+Source: https://fsharpforfunandprofit.com/posts/monoids-without-tears/#semigroups
+
+## Monoid Homomorphisms
+
+"is a transformation that preserves an essential “monoidness”, even if the “before” and “after” objects are quite different.""
+
+- Given a function that maps from one monoid to another (like 'wordCount' or 'mostFrequentWord')
+- Then to be a monoid homomorphism, the function must meet the requirement that:
+
+    function(chunk1) + function(chunk2) MUST EQUAL function(chunk1 + chunk2)
+
+Source: https://fsharpforfunandprofit.com/posts/monoids-part2/#monoid-homomorphisms
+
+## Working with non-monoids
+
+Design tips:
+
+- To easily create a monoidal type, make sure that each field of the type is also a monoid. (Question to think about: when you do this, what is the “zero” of the new compound type?)
+- To enable closure for a non-numeric type, replace single items with lists.
+
+Source: https://fsharpforfunandprofit.com/posts/monoids-part3/
