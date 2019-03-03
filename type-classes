@@ -11,7 +11,7 @@
 
 Source: https://github.com/expede/witchcraft
 
-## Functor (Mapable) / Applicative / Monad
+## Functor (Mappable) / Applicative / Monad
 
 - A *functor* is a data type that implements the Functor typeclass.
 - An *applicative* is a data type that implements the Applicative typeclass.
