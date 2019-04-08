@@ -5,3 +5,7 @@ Default dependencies:
 Create a dependency graph:
 
     mix xref graph --format dot
+
+Remove unused deps from mix.lock:
+
+    mix deps.clean --unlock --unused
