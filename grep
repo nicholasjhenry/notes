@@ -1,0 +1,3 @@
+recursive:
+
+    grep -r "texthere" .
