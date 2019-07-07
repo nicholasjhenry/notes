@@ -133,4 +133,8 @@ gitrevisions - specifying revisions and ranges for git
 
 ## Allow empty
 
-   git commit --allow-empty -m "Your msg"
+    git commit --allow-empty -m "Your msg"
+
+### Delete all branches except master
+
+    git branch | grep -v "master" | xargs git branch -D
