@@ -74,3 +74,7 @@ but in a nutshell the major difference is that ADD can do more than COPY:
 Cleaning
     docker system df
     docker system prune
+
+Reset all containers to not restart
+
+    docker update --restart=no $(docker ps -a -q)
