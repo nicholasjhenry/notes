@@ -78,3 +78,9 @@ Cleaning
 Reset all containers to not restart
 
     docker update --restart=no $(docker ps -a -q)
+
+XWindows
+
+    ifconfig en0
+    socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
+    docker run -it --rm -w /app -v $(pwd):/app -e DISPLAY=10.0.1.15:0 your_docker_image bash -l
