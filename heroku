@@ -21,5 +21,9 @@ Push database
 
 Pull database
 
-   heroku pg:pull DATABASE_URL example-app
-   heroku pg:pull DATABASE_URL postgres://postgres@localhost/my_db -r production
+    heroku pg:pull DATABASE_URL example-app
+    heroku pg:pull DATABASE_URL postgres://postgres@localhost/my_db -r production
+
+Copy between Heroku DB's
+
+    heroku pg:copy my-example-production::DATABASE DATABASE -a  my-review-app
