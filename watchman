@@ -1,5 +1,15 @@
+## Examples
+
     watchman watch .
     watchman watch-list
     watchman -- trigger ./ format '**/*.ex' '**/*.exs' '**/*.default' -- mix format
     watchman trigger-list .
     watchman watch-del-all
+
+    watchman-make --pattern '**/*.ex' '**/*.exs' --run 'MIX_ENV=test mix do format, test'
+
+Fix:
+    File "/usr/local/Cellar/watchman/4.9.0_3/libexec/bin/watchman-make", line 103, in __call__
+    if isinstance(values, basestring):
+
+    pip install pywatchman
