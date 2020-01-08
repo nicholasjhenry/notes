@@ -34,6 +34,17 @@ Cycle Location of panes:
 
     <C>-x <C>-o
 
+Cycle through windows:
+
+     <C>-a p          previous window
+     <C>-a n          next window
+
 Attach to existing
 
     tmux attach -t <number>
+
+Colour
+
+    for i in {0..255}; do
+        printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+    done
