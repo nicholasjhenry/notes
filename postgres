@@ -75,6 +75,10 @@ JSONB
 
     SELECT * FROM json_test WHERE data @> '{"a":1}';
 
+docker
+
+    psql -h localhost -U postgres my_db
+
 psql
 
     postgres://postgres@localhost/my_db
