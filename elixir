@@ -27,3 +27,7 @@ Maps
     %{:a => 2, 2 => :b}
     iex> %{map | :c => 3}
     ** (KeyError) key :c not found in: %{2 => :b, :a => 1}
+
+Secret
+
+     iex > Base.url_encode64(:crypto.strong_rand_bytes(40))
