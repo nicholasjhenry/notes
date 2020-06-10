@@ -1,3 +1,7 @@
 Install a Ruby version:
 
     LDFLAGS="-L/usr/local/opt/openssl/lib" CPPFLAGS="-I/usr/local/opt/openssl/include" asdf install ruby 2.3.1
+
+Erlang
+
+    KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"  asdf install erlang 22.3.4

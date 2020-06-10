@@ -82,3 +82,7 @@ docker
 psql
 
     postgres://postgres@localhost/my_db
+
+HTML Report
+
+    psql -c "\l+" -H -q postgres > out.html

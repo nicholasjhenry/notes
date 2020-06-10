@@ -1,3 +1,5 @@
+Consider using `fd`
+
 Example
 
     find /usr -name php $ find ./ -name 'php*'

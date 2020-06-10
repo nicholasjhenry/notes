@@ -1,3 +1,6 @@
+Looking for settings? `ctrl-p` and search for `json`.
+
+
 {
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Atom One Light",

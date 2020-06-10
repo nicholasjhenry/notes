@@ -1,0 +1,9 @@
+List S3
+
+    aws s3 ls
+    aws s3 ls --profile another-profile
+    aws s3 ls civilcode-test
+
+Profiles
+
+    https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
