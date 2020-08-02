@@ -1,0 +1,5 @@
+Compose CLI environment variables
+
+https://docs.docker.com/compose/reference/envvars/
+
+COMPOSE_FILE=docker-compose.yml:docker-compose.prod.yml
