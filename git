@@ -138,3 +138,8 @@ gitrevisions - specifying revisions and ranges for git
 ### Delete all branches except master
 
     git branch | grep -v "master" | xargs git branch -D
+
+### Tag
+
+    git tag dev2-njh
+    git push origin dev2-njh
