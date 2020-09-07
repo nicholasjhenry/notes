@@ -1,0 +1,7 @@
+- Are there related exceptions? (AppSignal)
+- Tail the production logs?
+- Try restarting the process?
+- Do the applications logs indicate an issue?
+- Is there something indicating a performance issue? (AppSignal)
+- What was the last deploy?
+- What are the recent commits?

@@ -84,3 +84,9 @@ XWindows
     ifconfig en0
     socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
     docker run -it --rm -w /app -v $(pwd):/app -e DISPLAY=10.0.1.15:0 your_docker_image bash -l
+
+Reverse engineer
+
+    dive [image name]
+    # or
+    docker run -v /var/run/docker.sock:/var/run/docker.sock laniksj/dfimage [image id]

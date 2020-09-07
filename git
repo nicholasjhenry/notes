@@ -143,3 +143,8 @@ gitrevisions - specifying revisions and ranges for git
 
     git tag dev2-njh
     git push origin dev2-njh
+
+### Different user
+
+    [remote "origin"]
+    url = https://nicholasjhenry-XXX@github.com/acme/stuff.git

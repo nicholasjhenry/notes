@@ -1,5 +1,6 @@
 bat (cat)
 ctop (top for containers)
+dive (docker introspection)
 fd (find) `fd myfile.text`
 fzf (fuzzy finder) `vim <ctrl-t>`
 gist (upload gist)
