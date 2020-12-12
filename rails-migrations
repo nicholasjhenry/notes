@@ -13,3 +13,9 @@
 - scale: number of digits following the decimal point
 
     add_column :order, :total, :decimal, precision: 8, scale: 2, default:  0.0
+
+## Run a specific migration
+
+rails console
+>> require "db/migrate/20090408054532_add_foos.rb"
+>> AddFoos.new.change

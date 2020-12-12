@@ -60,3 +60,8 @@ Bookmark
 
     ma # set
     `a # goto
+
+Format (e.g. wrap markdown):
+
+    # select v
+    gq
