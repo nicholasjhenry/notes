@@ -1,7 +1,0 @@
-Install the latest:
-
-    mix archive.install hex phx_new 1.4.1
-
-Generate:
-
-    mix phoenix.gen.model Post posts title user_id:references:users

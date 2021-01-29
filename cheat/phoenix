@@ -1,0 +1,11 @@
+Install the latest:
+
+    mix archive.install hex phx_new [1.4.1] # version optional
+
+Assets:
+
+    cd apps/phoenix_generated_web/assets && npm install && node node_modules/webpack/bin/webpack.js --mode development
+
+Generate:
+
+    mix phoenix.gen.model Post posts title user_id:references:users

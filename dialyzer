@@ -1,3 +1,0 @@
-Install as archive:
-
-    mix archive.install hex dialyxir 1.0.0-rc.6

@@ -1,3 +1,11 @@
+Install as archive:
+
+    mix archive.install hex dialyxir 1.0.0-rc.6
+
+Format:
+
+    --format dialyzer
+
 Example Output
 
 Warnings are have three parts:
@@ -16,3 +24,5 @@ lib/hollar/payouts/line_item.ex:23:
   )
 
   Note `changeset(x0@1::any(),#{})` will never match `#{'source':=#{'id':=_, _=>_}, '__struct__'=>none(), atom() | binary()=>_}`
+
+

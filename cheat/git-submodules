@@ -13,3 +13,5 @@ Then, another developer who wants to have submodule_directory changed to that ta
     git submodule update
 
 `git pull` changes which commit their submodule directory points to. 'git submodule update' actually merges in the new code.
+
+ git submodule update --init  packages/message_store/priv/message-db
