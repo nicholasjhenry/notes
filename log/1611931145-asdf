@@ -1,0 +1,27 @@
+# Issue with install Elrang 22 on MacOS 11.1
+
+ asdf install erlang 22.3.4.15
+ asdf_22.3.4.15 is not a kerl-managed Erlang/OTP installation
+ The asdf_22.3.4.15 build has been deleted
+ Extracting source code
+ Building Erlang/OTP 22.3.4.15 (asdf_22.3.4.15), please wait...
+ Configure failed.
+ checking OTP version... 22.3.4.15
+ configure: error:
+
+You are natively building Erlang/OTP for a later version of MacOSX
+than current version (11.1). You either need to
+cross-build Erlang/OTP, or set the environment variable
+ MACOSX_DEPLOYMENT_TARGET to 11.1 (or a lower version).
+
+ https://github.com/asdf-vm/asdf-erlang/issues/161#issuecomment-763797149
+
+This script resolved the issue (change version number):
+
+export ERLANG_VERSION=22.3
+cd ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/erlang/kerl-home/archives
+tar zxvf OTP-$ERLANG_VERSION.tar.gz
+sed -i '' -e 's/> $int_macosx_version/> $int_macosx_version \&\& false/' ./otp-OTP-$ERLANG_VERSION/make/configure.in
+rm OTP-$ERLANG_VERSION.tar.gz
+tar czvf OTP-$ERLANG_VERSION.tar.gz otp-OTP-$ERLANG_VERSION
+rm -rf otp-OTP-$ERLANG_VERSION

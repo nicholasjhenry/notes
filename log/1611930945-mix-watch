@@ -1,0 +1,9 @@
+# Issue running mix watch
+
+09:23:49.346 [error] Can't find executable `mac_listener`
+09:23:49.347 [warn]  Could not start the file system monitor.'
+
+Upgrading mix watch resolved the issue.
+
+IMPORTANT: delete the _build directory for a clean build. I had some weird issues
+perhaps with the some headers.
