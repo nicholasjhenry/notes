@@ -1,0 +1,13 @@
+Routes
+
+    live("/designer/new", DesignerLive.Form, :new)
+    live("/designer/:id/edit", DesignerLive.Form, :edit)
+
+Links
+
+    live_patch "Edit", to: Routes.user_index_path(@socket, :edit, user)
+
+mount OR handle_params
+
+> The golden rule is: always load data on mount.  But if you add live navigation with live_patch,
+> the data that can be changed on-the-fly must be now loaded on handle_params.

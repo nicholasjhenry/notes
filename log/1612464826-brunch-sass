@@ -1,0 +1,6 @@
+`01 May 18:08:05 - error: Initialization error - Cannot read property 'brunchPluginName' of null`
+
+I got this error with node 7.2. However I've found that if I remove /node_modules and then run npm
+install again it works fine. No need to downgrade node version.
+
+https://github.com/brunch/sass-brunch/issues/107
