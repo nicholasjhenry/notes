@@ -8,4 +8,4 @@ Install a Ruby version:
 
 Erlang
 
-    KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"  asdf install erlang 22.3.4
+    KERL_BUILD_DOCS="yes" KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"  asdf install erlang 22.3.4
