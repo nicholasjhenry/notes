@@ -86,3 +86,6 @@ psql
 HTML Report
 
     psql -c "\l+" -H -q postgres > out.html
+
+Database URL
+    postgres://postgres:postgres@localhost/mydb

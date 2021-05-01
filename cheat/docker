@@ -92,3 +92,7 @@ Reverse engineer
     dive [image name]
     # or
     docker run -v /var/run/docker.sock:/var/run/docker.sock laniksj/dfimage [image id]
+
+Host
+
+    host.docker.internal
