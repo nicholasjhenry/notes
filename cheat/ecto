@@ -42,3 +42,13 @@ SQL
 
     Ecto.Adapters.SQL.to_sql(:all, repo, Post)
     {"SELECT p.id, p.title, p.inserted_at, p.created_at FROM posts as p", []}
+
+     Engine.Repo.explain(:all, query)
+
+     :all
+    |> Ecto.Adapters.SQL.to_sql(Repo, <insert ecto query here>)
+    |> Tuple.to_list()
+    |> Enum.at(0)
+    |> String.replace("\"", "")
+    |> Kernel.<>(";")
+    |> IO.inspect(label: "QUERY HERE")

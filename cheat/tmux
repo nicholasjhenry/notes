@@ -52,3 +52,7 @@ Colour
 PANIC EXIT?
 
 There are older tmux sessions running after an upgrade.
+
+Find
+
+    <C>-x esc, then / or ?
