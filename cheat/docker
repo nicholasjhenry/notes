@@ -96,3 +96,7 @@ Reverse engineer
 Host
 
     host.docker.internal
+
+Prevent restart
+
+    docker update --restart=no
