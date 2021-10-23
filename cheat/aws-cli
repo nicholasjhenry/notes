@@ -1,0 +1,3 @@
+    aws s3 ls
+    cat ~/.aws/credentials
+    aws s3 ls --profile NAME

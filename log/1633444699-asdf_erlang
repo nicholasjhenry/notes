@@ -1,0 +1,37 @@
+## Error
+
+    KERL_BUILD_DOCS="yes" KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"  asdf install erlang 23.3.4.7
+    asdf_23.3.4.7 is not a kerl-managed Erlang/OTP installation
+    No build named asdf_23.3.4.7
+    Extracting source code
+    Building Erlang/OTP 23.3.4.7 (asdf_23.3.4.7), please wait...
+    APPLICATIONS DISABLED (See: /Users/nicholas/.asdf/plugins/erlang/kerl-home/builds/asdf_23.3.4.7/otp_build_23.3.4.7.log)
+    * jinterface     : Java compiler disabled by user
+
+    APPLICATIONS INFORMATION (See: /Users/nicholas/.asdf/plugins/erlang/kerl-home/builds/asdf_23.3.4.7/otp_build_23.3.4.7.log)
+    * wx             : wxWidgets was not compiled with --enable-compat28, wx will NOT be useable
+    * Can not link the wx driver, wx will NOT be useable
+
+    DOCUMENTATION INFORMATION (See: /Users/nicholas/.asdf/plugins/erlang/kerl-home/builds/asdf_23.3.4.7/otp_build_23.3.4.7.log)
+    * documentation  :
+    *                  fop is missing.
+    *                  Using fakefop to generate placeholder PDF files.
+
+    Build failed.
+    ^
+    /usr/local/opt/openssl@3/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+    #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+     ^
+     10 warnings generated.
+     25 warnings generated.
+     make[3]: *** [opt] Error 2
+     make[2]: *** [opt] Error 2
+     make[1]: *** [opt] Error 2
+     make: *** [libs] Error 2
+
+## Solution
+
+Note using openssl@1.1
+
+    KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl@1.1)" asdf install erlang 23.3.4.7
+
