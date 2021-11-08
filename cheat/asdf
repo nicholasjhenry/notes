@@ -8,4 +8,24 @@ Install a Ruby version:
 
 Erlang
 
-    KERL_BUILD_DOCS="yes" KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"  asdf install erlang 22.3.4
+    # Check dependencies https://github.com/asdf-vm/asdf-erlang#osx
+
+    KERL_BUILD_DOCS="yes" KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl@1.1)"  asdf install erlang 22.3.4
+
+Kerl
+
+export KERL_CONFIGURE_OPTIONS="
+      --disable-debug \
+      --disable-silent-rules \
+      --enable-dynamic-ssl-lib \
+      --enable-hipe \
+      --enable-shared-zlib \
+      --enable-smp-support \
+      --enable-threads \
+      --enable-wx \
+      --with-ssl=$(brew --prefix openssl@1.1) \
+      --without-javac
+      --enable-darwin-64bit \
+      --enable-kernel-poll \
+      --with-dynamic-trace=dtrace \
+      "
