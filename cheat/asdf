@@ -4,7 +4,7 @@ Install a Ruby version:
     https://github.com/rbenv/ruby-build/wiki#troubleshooting
 
     brew install rbenv/tap/openssl@1.0
-    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.0)" asdf install ruby 2.3.8
+    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)" asdf install ruby 2.3.8
 
 Erlang
 
