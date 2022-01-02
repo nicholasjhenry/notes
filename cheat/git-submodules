@@ -29,3 +29,7 @@ Then, another developer who wants to have submodule_directory changed to that ta
 7. Delete the now untracked submodule files rm -rf path_to_submodule
 
 https://gist.github.com/myusuf3/7f645819ded92bda6677
+
+## Git External
+
+    https://github.com/dcestari/git-external

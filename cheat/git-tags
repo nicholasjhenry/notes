@@ -21,3 +21,7 @@ Switch to a tag:
     git checkout 0.9
 
 `HEAD` refers to head of the current branch.
+
+Push tags
+
+    git push origin <tag_name>

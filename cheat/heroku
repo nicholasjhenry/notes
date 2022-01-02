@@ -27,3 +27,8 @@ Pull database
 Copy between Heroku DB's
 
     heroku pg:copy my-example-production::DATABASE DATABASE -a  my-review-app
+
+
+Manifests:
+
+    https://github.com/civilcode/acme-ex/blob/master/heroku.yml
