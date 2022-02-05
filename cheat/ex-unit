@@ -1,9 +1,0 @@
-
-## Parametized test
-
-    for {values, cases} <- @parameters do
-      for {actual, expected} <- cases do
-        test "#{inspect(actual)} == #{inspect(expected)}" do
-          assert unquote(Macro.escape(actual)) == unquote(Macro.escape(expected))
-      end
-    end
