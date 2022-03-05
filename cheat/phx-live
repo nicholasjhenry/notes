@@ -48,3 +48,9 @@ Live Navigation Reference:
 References:
 
 * [Michael Crumm - Getting to Know the LiveView Lifecycle](https://www.youtube.com/watch?v=J1l4W0T7Jgg)
+
+Functional components:
+
+> You can even have the component give a value back to the caller, by using let.
+
+https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html#module-default-slots
