@@ -27,8 +27,7 @@ defmodule MyApp.Service.Behaviour do
 
   alias MyApp.Service.SomeDataType
 
-    @callback command(map()) :: {:ok, SomeDataType.t()}
-  end
+  @callback command(map()) :: {:ok, SomeDataType.t()}
 end
 
 # lib/my_app/service/fake.ex
