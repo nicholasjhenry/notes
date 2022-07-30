@@ -4,6 +4,7 @@ Don't update under Tmux
     brew doctor
     brew outdated
     brew upgrade <formulae name>
+    brew cleanup
 
 Errors
 
