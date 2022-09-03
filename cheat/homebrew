@@ -27,3 +27,8 @@ Cask
 
     brew cask list
     brew install --force <app>
+
+Errors:
+
+    # invalid 'depends_on macos' value: unknown or unsupported macOS version
+    /usr/bin/find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' -print0 | /usr/bin/xargs -0 /usr/bin/perl -i -pe 's/depends_on macos: \[.*?\]//gsm;s/depends_on macos: .*//g'
