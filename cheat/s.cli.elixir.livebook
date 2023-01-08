@@ -1,0 +1,3 @@
+    mix ecript.install hex livebook
+    livebook server
+    livebook server --help
