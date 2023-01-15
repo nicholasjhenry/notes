@@ -1,3 +1,7 @@
-    mix ecript.install hex livebook
+    mix escript.install hex livebook
     livebook server
     livebook server --help
+
+    iex --sname foo --cookie foo -S mix
+    livebook server guides/demo.md
+    # connect to node with runtime settings (sr), configure
