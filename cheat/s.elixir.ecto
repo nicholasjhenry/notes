@@ -18,8 +18,12 @@ Macro API (Expression Query Syntax)
 Example of nested params
 
     %{"title" => "Testing",
-      "todo_items" => %{"0" => %{"body" => "Testing 1"},
-        "1" => %{"body" => "Testing 1"}}}
+      "todo_items" =>
+        %{
+            "0" => %{"body" => "Testing 1"},
+            "1" => %{"body" => "Testing 1"}
+        }
+    }
 
 Preload with pre-defined join value:
 

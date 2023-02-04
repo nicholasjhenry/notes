@@ -9,4 +9,5 @@ Tips:
 
 Links:
 
+* https://dashbit.co/blog/working-with-ecto-associations-and-embeds
 * https://hexdocs.pm/ecto/Ecto.Changeset.html#module-the-on_replace-option
