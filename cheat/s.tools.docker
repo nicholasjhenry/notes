@@ -100,3 +100,4 @@ Host
 Prevent restart
 
     docker update --restart=no
+    docker update --restart=no $(docker ps -a -q)  # all containers
