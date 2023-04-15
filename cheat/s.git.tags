@@ -25,3 +25,7 @@ Switch to a tag:
 Push tags
 
     git push origin <tag_name>
+
+Delete remote tags
+
+    git push --delete origin <tag_name>
