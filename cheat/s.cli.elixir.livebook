@@ -1,4 +1,9 @@
+Install:
+
     mix escript.install hex livebook
+
+Run:
+
     livebook server
     livebook server --help
 
