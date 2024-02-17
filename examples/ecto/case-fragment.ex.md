@@ -1,3 +1,4 @@
+```elixir
 def load(query) do
   query
   |> include_mappings
@@ -20,3 +21,4 @@ defp include_mappings(query) do
     left_join: mappings in assoc(element, :mappings),
     preload: [mappings: mappings]
 end
+```

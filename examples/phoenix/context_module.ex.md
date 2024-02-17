@@ -1,3 +1,4 @@
+```elixir
 defmodule MyApp.Calendars do
   @moduledoc """
   The context module for managing personalized calendars.
@@ -42,3 +43,5 @@ defmodule MyApp.Calendars do
     Repo.preload(struct, [:share], opts)
   end
 end
+
+```
