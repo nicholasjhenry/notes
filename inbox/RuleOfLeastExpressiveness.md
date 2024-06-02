@@ -1,0 +1,1 @@
+> When programming a component, the right computation model for the component

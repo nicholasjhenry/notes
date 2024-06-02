@@ -148,3 +148,9 @@ gitrevisions - specifying revisions and ranges for git
 
     [remote "origin"]
     url = https://nicholasjhenry-XXX@github.com/acme/stuff.git
+
+Ignore changes in a file:
+
+```
+git update-index --assume-unchanged src/file/to/ignore
+```
