@@ -1,3 +1,3 @@
 ## Remove password
 
-Print as PDF in MacOS Preview
+Print/Save as PDF in MacOS Preview
