@@ -3,7 +3,7 @@ Routes
     live("/designer/new", DesignerLive.Form, :new)
     live("/designer/:id/edit", DesignerLive.Form, :edit)
 
-Link    s
+Links
 
     live_patch "Edit", to: Routes.user_index_path(@socket, :edit, user)
 
