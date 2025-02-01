@@ -1,7 +1,8 @@
 ## Notes
 
-A collection of personal notes including cheat sheets, snippets etc.
+A collection of personal notes, including cheat sheets, snippets etc.
 
+* `d`: data
 * `g`: grammar
 * `h`: hardware
 * `s`: software

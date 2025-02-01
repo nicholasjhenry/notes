@@ -1,0 +1,2 @@
+ - Logi Tune is specifically designed for managing and customizing Logitech personal collaboration devices, such as webcams, headsets, and conference cameras.
+ - Logi Options+ is designed for managing **Logitech peripherals**, such as mice and keyboards, with a focus on workflow customization.

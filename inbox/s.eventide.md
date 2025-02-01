@@ -1,0 +1,3 @@
+## Consumer Group Configuration
+
+I recommend using: identifier = "#{group_size}-#{group_member}" You want the identifier to change when the group size changes. Group member 0 of a 1 sized group is not the same as 0 of a 2 sized group. They handle different sets of streams. Without this, you must be careful to clear your position store any time you scale. otherwise, it’s very possible that messages will be skipped, which is disastrous
