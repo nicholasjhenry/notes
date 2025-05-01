@@ -44,15 +44,14 @@ Assocs
 
 SQL
 
-    Ecto.Adapters.SQL.to_sql(:all, repo, Post)
-    {"SELECT p.id, p.title, p.inserted_at, p.created_at FROM posts as p", []}
+```elixir
+query
+|> Repo.to_sql()
+|> then(fn {sql, _} -> IO.puts(sql) end)
 
-     Engine.Repo.explain(:all, query)
+Repo.explain(:all, query, analyze: true, costs: true, verbose: true, buffers: true, format: :map)
+|> Jason.encode!
+|> IO.puts
+```
 
-     :all
-    |> Ecto.Adapters.SQL.to_sql(Repo, <insert ecto query here>)
-    |> Tuple.to_list()
-    |> Enum.at(0)
-    |> String.replace("\"", "")
-    |> Kernel.<>(";")
-    |> IO.inspect(label: "QUERY HERE")
+https://tatiyants.com/pev
