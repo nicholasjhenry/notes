@@ -1,3 +1,10 @@
+
+# "L" for Less Than
+
+The `<` symbol looks like a tilted L, which can help you remember
+
+`< = Less than`
+
 0 < length
 
 │        │       │        │

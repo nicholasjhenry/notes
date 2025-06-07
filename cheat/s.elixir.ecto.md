@@ -42,16 +42,20 @@ Assocs
     |> where([c], not is_nil(c.title))
     |> Repo.all
 
+Raw
+
+    Ecto.Adapters.SQL.query!(Examples.Repo, "SELECT 1", [])
+
 SQL
 
 ```elixir
-query
-|> Repo.to_sql()
-|> then(fn {sql, _} -> IO.puts(sql) end)
-
 Repo.explain(:all, query, analyze: true, costs: true, verbose: true, buffers: true, format: :map)
 |> Jason.encode!
 |> IO.puts
+
+query
+|> Repo.to_sql()
+|> then(fn {sql, _} -> IO.puts(sql) end)
 ```
 
 https://tatiyants.com/pev

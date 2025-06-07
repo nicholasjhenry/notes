@@ -17,3 +17,14 @@ Fix:
     if isinstance(values, basestring):
 
     pip install pywatchman
+
+Find path to log:
+
+    ps aux | grep watchman | grep -o -- '--logfile=\S*' | awk -F= '{ print $2 }'
+
+Check pattern matching:
+
+    watchman -j <<< '["query", ".", {"expression": ["match", "**/*.ex", "wholename"], "fields": ["name"]}]'
+
+
+

@@ -29,3 +29,7 @@ Recommended: Option I: Set a CNAME record
 - Once the domain has been setup, add a certificate: https://fly.io/docs/networking/custom-domain/#get-certified
 - It may take some time for the certificate to be issued, check with `fly certs check example.com`
 - Once the certificate has been issued you should be able to access the application via the domain
+
+## Environment Variables
+
+    flyctl ssh console -a <app-name> -C "printenv"
