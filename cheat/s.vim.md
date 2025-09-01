@@ -65,3 +65,7 @@ Format (e.g. wrap markdown):
 
     # select v
     gq
+
+Replace with new line chars:
+
+	'<,'>s/{STRING}/\n/g
