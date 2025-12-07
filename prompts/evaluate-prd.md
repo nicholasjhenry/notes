@@ -1,3 +1,5 @@
+Source: https://youtu.be/rY6MOdXv02M
+
 You are evaluating a Product Requirements Document. Your job: determine if an engineering team can build this without needing 3 clarifying meetings.
 
 Evaluate on these axes (0-5):
