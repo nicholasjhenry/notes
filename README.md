@@ -2,6 +2,7 @@
 
 A collection of personal notes, including cheat sheets, snippets etc.
 
+* `ai`: agentic coding
 * `d`: data
 * `g`: grammar
 * `h`: hardware
@@ -9,5 +10,5 @@ A collection of personal notes, including cheat sheets, snippets etc.
 
 ### About Me
 
-* Follow me on [Twitter](http://www.twitter.com/nicholasjhenry)
+* Follow me on [BlueSky](https://bsky.app/profile/nicholasjhenry.github.io)
 * Connect via [LinkedIn](http://ca.linkedin.com/in/nicholasjhenry)
