@@ -27,6 +27,10 @@ Dump database (SQL)
 
     pg_dump dbname > mydb.sql
 
+Dump database (with connection string)
+
+    pg_dump "postgresql://username:password@host:5432/database_name" > backup.sql
+
 Dump database (Compress format suitable for Heroku)
 
     pg_dump -Fc --no-acl --no-owner -h localhost -U root mydb > mydb.dump

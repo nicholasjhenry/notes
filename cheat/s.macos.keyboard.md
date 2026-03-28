@@ -6,3 +6,7 @@ Option (or Alt) ⌥
 Control (or Ctrl) ⌃
 Caps Lock ⇪
 Escape (\)
+
+Disable navigating spaces with `Ctrl-<arrow>`
+
+	System Settings → Keyboard → Keyboard Shortcuts → Mission Control
