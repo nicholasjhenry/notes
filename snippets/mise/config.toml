@@ -1,0 +1,9 @@
+[tools]
+elixir = "1.19.5-otp-28"
+erlang = "28.4.1"
+
+[env]
+_.file = [".env", ".env.local"]
+
+KERL_BUILD_DOCS="yes"
+KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --enable-dynamic-ssl-lib --enable-shared-zlib --enable-smp-support --enable-threads --enable-wx --with-wx-config=$(brew --prefix wxwidgets@3.2)/bin/wx-config-3.2 --with-ssl=$(brew --prefix openssl) --without-javac --enable-darwin-64bit --enable-kernel-poll --with-dynamic-trace=dtrace"
