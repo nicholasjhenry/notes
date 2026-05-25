@@ -69,3 +69,12 @@ Format (e.g. wrap markdown):
 Replace with new line chars:
 
 	'<,'>s/{STRING}/\n/g
+
+
+Find the 45th char `|` (must be at `0`):
+
+    45f|
+  
+Insert 80 of char `|` (insert mode): 
+
+    Ctrl+o 80|- Esc )
