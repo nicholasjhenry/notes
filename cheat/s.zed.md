@@ -32,3 +32,35 @@ Zed Settings:
 ```
 
 Note: This may take a little while to "kick in, " but it does work.
+
+## AI
+
+Context servers:
+
+```json
+  "context_servers": {
+    "postgres-context-server": {
+      "enabled": true,
+      "remote": false,
+      "settings": {},
+    },
+    "tidewave-mcp": {
+      "enabled": true,
+      "settings": {},
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "YOUR API KEY"
+      }
+    }
+  }
+```
+
+Edit predications
+
+```json
+  "edit_predictions": {
+    "disabled_globs": ["./guides/**/*.md"]
+  },
+```
