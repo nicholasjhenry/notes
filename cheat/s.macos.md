@@ -6,7 +6,7 @@ How to Set 'Paste and Match Style' as Default on Mac OSX
 
 Re-map Caps Lock -> Escape
 
-  System Preferences > Keyboard > Modifier Keys
+  System Preferences > Keyboard > Keyboard Shortcuts > Modifier Keys
 
 ## Installer
 
